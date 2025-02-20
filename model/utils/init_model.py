@@ -24,7 +24,8 @@ import os
 
 def init_model(configs, config_path):
     if configs['cmvn_file'] is not None:
-        mean, istd = load_cmvn(os.path.join(config_path, '..', '..', configs['cmvn_file']), configs['is_json_cmvn'])
+        cmvn_file = os.path.abspath(os.path.join(config_path, '..', '..', configs['cmvn_file']))
+        mean, istd = load_cmvn(cmvn_file, configs['is_json_cmvn'])
         global_cmvn = GlobalCMVN(
             torch.from_numpy(mean).float(),
             torch.from_numpy(istd).float())

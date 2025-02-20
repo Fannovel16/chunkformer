@@ -42,7 +42,7 @@ ChunkFormer is an ASR model designed for processing long audio inputs effectivel
 
 
 #### Dependencies
-To run the implementation, ensure you have the following dependencies installed:
+To run the implementation, ensure you have an environment with PyTorch working and the following dependencies installed:
 
 ```bash
 pip install -r requirements.txt
