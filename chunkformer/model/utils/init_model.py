@@ -13,12 +13,12 @@
 # limitations under the License.
 
 import torch
-from model.asr_model import ASRModel
+from chunkformer.model.asr_model import ASRModel
 
-from model.cmvn import GlobalCMVN
-from model.ctc import CTC
-from model.encoder import ChunkFormerEncoder
-from model.utils.cmvn import load_cmvn
+from chunkformer.model.cmvn import GlobalCMVN
+from chunkformer.model.ctc import CTC
+from chunkformer.model.encoder import ChunkFormerEncoder
+from chunkformer.model.utils.cmvn import load_cmvn
 import os
 
 
